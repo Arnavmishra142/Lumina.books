@@ -102,5 +102,21 @@ function toggleMenu() {
   }
 }
     </script>
+   <script>
+let lastScroll = 0;
+const navbar = document.querySelector(".navbar");
+
+window.addEventListener("scroll", () => {
+  let currentScroll = window.pageYOffset;
+
+  if(currentScroll > lastScroll){
+    navbar.style.top = "-80px";   // scroll down → hide
+  } else {
+    navbar.style.top = "0";       // scroll up → show
+  }
+
+  lastScroll = currentScroll;
+});
+   </script>
 </body>
 </html>
