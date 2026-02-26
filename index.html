@@ -40,8 +40,16 @@
                 </div>
             </div>
 
-            <!-- Right Side (Search) -->
+            <!-- Right Side (Search & Download Checker) -->
             <div class="nav-right">
+                <button class="download-checker-btn" id="downloadCheckerBtn" aria-label="Check downloads">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    <span class="download-count" id="navDownloadCount">0</span>
+                </button>
                 <div class="search-container">
                     <input type="text" placeholder="Search titles..." class="search-bar" id="searchInput">
                     <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -61,6 +69,8 @@
             <a href="#" data-category="fiction">Fiction</a>
             <a href="#" data-category="classic">Classics</a>
             <a href="#" data-category="politics">Politics</a>
+            <a href="#" id="mobileDownloadChecker">My Downloads</a>
+            <a href="#" id="mobileCreditsLink">Credits</a>
         </div>
     </div>
 
@@ -70,6 +80,24 @@
         <section class="hero">
             <h1 class="hero-title">Curated Classics. Free to Read.</h1>
             <p class="hero-subtitle">A collection of timeless literature, beautifully presented.</p>
+        </section>
+
+        <!-- Download Checker Section -->
+        <section class="download-checker-section" id="downloadCheckerSection">
+            <div class="download-checker-container">
+                <div class="download-checker-header">
+                    <h2>My Downloads</h2>
+                    <button class="close-download-checker" id="closeDownloadChecker" aria-label="Close download checker">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 6 6 18"></path>
+                            <path d="m6 6 12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="download-checker-content" id="downloadCheckerContent">
+                    <p class="no-downloads">No downloads yet. Start exploring and download your favorite books!</p>
+                </div>
+            </div>
         </section>
 
         <!-- Book Grid -->
@@ -100,9 +128,27 @@
         </div>
     </div>
 
+    <!-- Credits Modal -->
+    <div class="credits-modal" id="creditsModal">
+        <div class="credits-content">
+            <button class="credits-close" id="closeCredits" aria-label="Close credits">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6 6 18"></path>
+                    <path d="m6 6 12 12"></path>
+                </svg>
+            </button>
+            <div class="credits-text">
+                <p>This space would not feel the same without the quiet support, inspiration, and presence of two wonderful souls — <span class="highlight-name">Prachi</span> and <span class="highlight-name">Trisha</span>.</p>
+                <p>Their belief, energy, and unspoken encouragement added meaning to the journey behind this creation. Sometimes the most important contributions are not loud, but deeply felt — and theirs will always remain a part of this work.</p>
+                <p class="credits-signature">Built with vision, persistence, and heart.<br>— Arnav</p>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="footer">
         <p>&copy; 2024 Lumina. Curated classics for the modern reader.</p>
+        <button class="credits-link" id="creditsBtn">Credits</button>
     </footer>
 
     <script src="script.js"></script>
