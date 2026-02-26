@@ -26,36 +26,37 @@
             <div class="nav-right">
             <div class="navbar">
 
+    <nav class="navbar">
+
   <!-- LEFT SIDE -->
   <div class="nav-left">
     <div class="menu-icon" onclick="toggleMenu()">☰</div>
     <a href="#" class="logo">Lumina.</a>
   </div>
 
-  <!-- RIGHT SIDE -->
-  <div class="nav-right">
-    <input type="text" placeholder="Search..." class="search-bar">
+  <!-- CENTER (Categories) -->
+  <div class="dropdown">
+    <button class="dropdown-btn" id="categoriesBtn">
+      Categories
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="m6 9 6 6 6-6"></path>
+      </svg>
+    </button>
+
+    <div class="dropdown-menu" id="categoriesMenu">
+      <a href="#" data-category="all">All Books</a>
+      <a href="#" data-category="philosophy">Philosophy</a>
+      <a href="#" data-category="fiction">Fiction</a>
+      <a href="#" data-category="classic">Classics</a>
+      <a href="#" data-category="politics">Politics</a>
+    </div>
   </div>
-                
-      </div>
-            </div>
-                <div class="dropdown">
-                    <button class="dropdown-btn" id="categoriesBtn">
-                        Categories
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="m6 9 6 6 6-6"></path>
-                        </svg>
-                    </button>
-                    <div class="dropdown-menu" id="categoriesMenu">
-                        <a href="#" data-category="all">All Books</a>
-                        <a href="#" data-category="philosophy">Philosophy</a>
-                        <a href="#" data-category="fiction">Fiction</a>
-                        <a href="#" data-category="classic">Classics</a>
-                        <a href="#" data-category="politics">Politics</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+  <!-- RIGHT SIDE (Search) -->
+  <div class="nav-right">
+    <input type="text" placeholder="Search titles..." class="search-bar">
+  </div>
+
     </nav>
 
     <!-- Main Content -->
