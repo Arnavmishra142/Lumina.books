@@ -132,23 +132,44 @@
             <!-- Book content will be inserted here -->
         </div>
     </div>
-
     <!-- Credits Modal -->
-    <div class="credits-modal" id="creditsModal">
-        <div class="credits-content">
-            <button class="credits-close" id="closeCredits" aria-label="Close credits">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M18 6 6 18"></path>
-                    <path d="m6 6 12 12"></path>
-                </svg>
-            </button>
-            <div class="credits-text">
-                <p>This space would not feel the same without the quiet support, inspiration, and presence of two wonderful souls — <span class="highlight-name">Prachi</span> and <span class="highlight-name">Trisha</span>.</p>
-                <p>Their belief, energy, and unspoken encouragement added meaning to the journey behind this creation. Sometimes the most important contributions are not loud, but deeply felt — and theirs will always remain a part of this work.</p>
-                <p class="credits-signature">Built with vision, persistence, and heart.<br>— Arnav</p>
-            </div>
+<div class="credits-modal" id="creditsModal" aria-hidden="true">
+    
+    <div class="credits-content" role="dialog" aria-labelledby="creditsTitle">
+        
+        <!-- Close Button -->
+        <button 
+            class="credits-close" 
+            id="closeCredits" 
+            type="button" 
+            aria-label="Close credits"
+        >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 6 6 18"></path>
+                <path d="m6 6 12 12"></path>
+            </svg>
+        </button>
+
+        <!-- Credits Text -->
+        <div class="credits-text">
+            
+            <h2 id="creditsTitle">Credits</h2>
+
+            <p>
+                This space would not feel the same without the quiet support, inspiration, and presence of three wonderful souls —
+                <span class="highlight-name">Trisha</span>,
+                <span class="highlight-name">Prachi</span> and
+                <span class="highlight-name">Muskan</span>.
+            </p>
+
+            <p>
+                Their belief, energy, and unspoken encouragement added meaning to the journey behind this creation.
+                Sometimes the most important contributions are not loud, but deeply felt — and theirs will always remain a part of this work.
+            </p>
+
         </div>
     </div>
+</div>
 
     <!-- Footer -->
     <footer class="footer">
