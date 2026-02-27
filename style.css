@@ -1131,3 +1131,22 @@ button {
     color: #e74c3c !important;
     font-weight: 600;
 }
+.books-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.book-card {
+    background: #111;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.book-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
