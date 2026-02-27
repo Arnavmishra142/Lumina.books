@@ -1136,3 +1136,10 @@ button {
 .epstein-link:hover {
     color: #e74c3c;
 }
+.dropdown-menu a.epstein-link {
+    color: #c0392b !important;
+    font-weight: 600;
+}
+.mobile-menu a.epstein-link {
+    color: #c0392b !important;
+}
