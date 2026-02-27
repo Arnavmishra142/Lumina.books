@@ -1128,3 +1128,11 @@ button {
         scroll-behavior: auto;
     }
 }
+.epstein-link {
+    color: #c0392b;
+    font-weight: 600;
+}
+
+.epstein-link:hover {
+    color: #e74c3c;
+}
