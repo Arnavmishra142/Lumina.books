@@ -1150,3 +1150,67 @@ button {
     height: auto;
     border-radius: 6px;
 }
+/* ===== Educational Smart Filters ===== */
+.edu-filter-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+    flex-wrap: wrap;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.edu-select {
+    background-color: var(--color-bg-secondary);
+    color: var(--color-text);
+    border: 1px solid var(--color-border);
+    padding: 0.85rem 1.5rem;
+    border-radius: 50px;
+    font-family: var(--font-primary);
+    font-size: 0.95rem;
+    outline: none;
+    cursor: pointer;
+    transition: var(--transition-fast);
+    /* Custom Dropdown Arrow styling */
+    appearance: none; 
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23a0a0a0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+    padding-right: 2.5rem;
+    min-width: 160px;
+}
+
+.edu-select:focus, .edu-select:hover {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 15px var(--color-accent-glow);
+    color: var(--color-accent);
+}
+
+.edu-select option {
+    background-color: var(--color-bg-tertiary);
+    color: var(--color-text);
+    padding: 10px;
+}
+
+/* Make it look good on mobile */
+@media (max-width: 768px) {
+    .edu-filter-container {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.8rem;
+    }
+    .edu-select, .search-container {
+        width: 100%;
+        max-width: 350px;
+    }
+    .search-bar {
+        width: 100%;
+    }
+    .search-bar:focus {
+        width: 100%;
+    }
+}
+    
