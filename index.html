@@ -32,17 +32,22 @@
                         <path d="m6 9 6 6 6-6"></path>
                     </svg>
                 </button>
-                <div class="dropdown-menu" id="categoriesMenu">
-                    <a href="#" data-category="all" class="active">All Books</a>
-                    <a href="#" data-category="philosophy">Philosophy</a>
-                    <a href="#" data-category="fiction">Fiction</a>
-                    <a href="#" data-category="classic">Classics</a>
-                    <a href="#" data-category="politics">Politics</a>
-                    <a href="#" data-category="epstein" class="epstein-link">Epstein File</a>
-                    <a href="#" data-category="books">Books</a>
-            
+                            <div class="dropdown">
+                <button class=\"dropdown-btn\" id=\"categoriesBtn\">
+                    Library
+                    <svg class=\"dropdown-arrow\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">
+                        <path d=\"m6 9 6 6 6-6\"></path>
+                    </svg>
+                </button>
+                <div class=\"dropdown-menu\" id=\"categoriesMenu\">
+                    <a href=\"#\" data-category=\"all\" class=\"active\">All Materials</a>
+                    <a href=\"#\" data-category=\"ncert\">NCERT Books</a>
+                    <a href=\"#\" data-category=\"solutions\">Chapter Solutions</a>
+                    <a href=\"#\" data-category=\"pyq\">Previous Year Papers</a>
+                    <a href=\"#\" data-category=\"legal\">Legal Library</a>
                 </div>
-            </div>
+                  </div>
+                
 
             <!-- Right Side (Search & Download Checker) -->
             <div class="nav-right">
@@ -82,11 +87,37 @@
 
     <!-- Main Content -->
     <main class="main-content">
-        <!-- Hero Section -->
-        <section class="hero">
-            <h1 class="hero-title">Curated Classics. Free to Read.</h1>
-            <p class="hero-subtitle">A collection of timeless literature, beautifully presented.</p>
-        </section>
+            <section class="hero">
+        <h1 class="hero-title">Elevate Your Learning</h1>
+        <p class="hero-subtitle">Access NCERT, Solutions, PYQs & Legal Books in one premium space.</p>
+        
+        <div class="edu-filter-container">
+            <select class="edu-select" id="classFilter">
+                <option value="all">All Classes</option>
+                <option value="class12">Class 12</option>
+                <option value="class11">Class 11</option>
+                <option value="class10">Class 10</option>
+                <option value="legal">Law & Legal</option>
+            </select>
+            
+            <select class="edu-select" id="subjectFilter">
+                <option value="all">All Subjects</option>
+                <option value="maths">Mathematics</option>
+                <option value="science">Science / Physics</option>
+                <option value="history">History</option>
+                <option value="polity">Polity / Constitution</option>
+            </select>
+
+            <div class="search-container">
+                <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.3-4.3"></path>
+                </svg>
+                <input type="text" class="search-bar" id="searchInput" placeholder="Search chapters, topics...">
+            </div>
+        </div>
+            </section>
+        
 
         <!-- Download Checker Section -->
         <section class="download-checker-section" id="downloadCheckerSection">
